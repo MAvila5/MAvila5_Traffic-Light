@@ -1,12 +1,43 @@
+/* Styling for the container holding the lights */
+#container {
+    background-color: black;
+    width: 56px;
+    height: 178px;
+    padding: 7px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
-/* 
+/* Styling for the lights */
+.light {
+    width: 50px;
+    height: 50px;
+    margin: 5px auto;
+    border-radius: 50%;
+    padding: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+/* Styling for the yellow light */
+.light.yellow {
+    background-color: yellow;
+}
 
-*/
+/* Styling for the green light */
+.light.green {
+    background-color: green;
+}
+
+/* Styling for the red light */
+.light.red {
+    background-color: red;
+}
+
+/* Styling for the selected light */
+.light.selected {
+    box-shadow: 0px 0px 10px #f8ffcc;
+}
